@@ -3,8 +3,11 @@
 <head>
     <script>
         function checkMaths(form) {
-
-        }
+            if (form.answerPower.value == "1024") {
+                document.getElementById("powerOutput").innerHTML = "Correct!";
+            } else {
+                document.getElementById("powerOutput").innerHTML = "Incorrect!";
+            }}
     </script>
 </head>
 <body>
