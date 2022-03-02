@@ -3,12 +3,14 @@
 <head>
     <script>
         function dataCode() {
+
             let randomValues = [];
-            for (let loopCounter = 0; loopCounter<100; loopCounter++) {
-                let randomNumber;
-                randomNumber = Math.random() * 1000;
+            for (let loopCounter = 0; loopCounter < 100; loopCounter++) {
+                let randomNumber= Math.random() * 1000;
                 randomValues[loopCounter] = randomNumber;
             }
+            alert(randomValues);
+            document.getElementById("outputPosition").innerHTML = randomValues;
         }
     </script>
     Data Structures Code
